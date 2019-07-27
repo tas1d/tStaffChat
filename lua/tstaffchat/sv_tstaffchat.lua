@@ -2,6 +2,7 @@ util.AddNetworkString("tStaffChat")
 
 hook.Add("PlayerSay", "tStaffChat", function(ply, text)
 	if string.lower(string.sub(text, 1, string.len(tStaffChat.command) + 1)) == tStaffChat.command .. " " then
+		if not tStaffChat.staff[ply:GetUserGroup()] then return end
 		local text = string.sub(text, string.len(tStaffChat.command) + 2, string.len(text))
 		local chatText = {tStaffChat.prefixcolor, tStaffChat.prefix .. " ", team.GetColor(ply:Team()), ply:Nick(), tStaffChat.textcolor, " > " .. text}
 		
