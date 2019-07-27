@@ -1,4 +1,4 @@
-# tLoad
+# tStaffChat
 
 ## How to Install
 1) Drag and drop into your addons folder
