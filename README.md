@@ -1,6 +1,6 @@
 # tStaffChat
 
-A simple staff chat for your Garry's Mod Server!
+A simple staff chat for your Garry's Mod server!
 
 ## How to Install
 1) Drag and drop into your addons folder
